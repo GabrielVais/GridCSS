@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="widhth=device=width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<title>Starter Files</title>
+</head>
+<h1 align="center">DISPLAY GRID START COLUMNS</h1>
+<div class="container-column">
+	<div class="item">1</div>
+	<div class="item">2</div>
+	<div class="item">3</div>
+	<div class="item">4</div>
+	<div class="item">5</div>
+	<div class="item">6</div>
+	<div class="item">7</div>
+	<div class="item">8</div>
+	<div class="item">9</div>
+	<div class="item">10</div>
+</div>
+<hr/>
+<h1 align="center">DISPLAY GRID START ROWS</h1>
+<div class="container-rows">
+	<div class="item">1</div>
+	<div class="item">2</div>
+	<div class="item">3</div>
+	<div class="item">4</div>
+	<div class="item">5</div>
+	<div class="item">6</div>
+	<div class="item">7</div>
+	<div class="item">8</div>
+	<div class="item">9</div>
+	<div class="item">10</div>
+</div>
+
+<style>
+	/*GRID COLUMN*/
+	.container-column{
+
+		display: grid;
+		/*tamanho das colunas e quantas colunas vao ter
+		em uma linha = grid-template-columns*/
+		grid-template-columns:200px 200px;
+		/*espaço entre as colunas = grid-gap*/
+		grid-gap:20px;
+		/*Alinhando no centro com justify content center*/
+		justify-content:center;
+		/*grid-auto deixa responsivo*/
+	
+
+	}
+
+	/*GRID ROWS*/
+	.container-rows{
+
+		display: grid;
+		/*tamanho das colunas e quantas colunas vao ter
+		em uma linha = grid-template-columns*/
+		grid-template-rows: 100px;
+		/*grid-auto deixa responsivo*/
+		grid-auto-rows:200px;
+		/*espaço entre as colunas = grid-gap*/
+		grid-gap:20px;
+
+
+	}
+</style>
+
+</body>
+</html>
