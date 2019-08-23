@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="widhth=device=width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<title>Starter Files</title>
+</head>
+<h1 align="center">GRID TAMANHO MINIMO E MAXIMO</h1>
+<div class="container-column">
+	<div class="item">1</div>
+	<div class="item">2</div>
+	<div class="item">3</div>
+	<div class="item">4</div>
+	<div class="item">5</div>
+	<div class="item">6</div>
+	<div class="item">7</div>
+	<div class="item">8</div>
+	<div class="item">9</div>
+	<div class="item">10</div>
+</div>
+
+<style>
+	/*GRID COLUMN*/
+	.container-column{
+
+		display: grid;
+		/*tamanho das colunas e quantas colunas vao ter
+		em uma linha = grid-template-columns
+	
+			AUTO-FILL = GRID RESPONSIVO, IRA
+			PULAR LINHA DE ACORDO COM O TAMANHO DA TELA
+
+			minmax = recebe tamanho minimo e o tamanho maximo 
+			de cada coluna ou linha
+		*/
+		grid-template-columns:repeat(auto-fill, 
+		minmax(50px,200px));
+		/*espaço entre as colunas = grid-gap*/
+		grid-gap:20px;
+		/*Alinhando no centro com justify content center*/
+		justify-content:center;
+		/*grid-auto deixa responsivo*/
+		/*grid-template-columns: fit-content(400px) 150px*/
+		/*150px 150px;*/
+
+		border: 2px solid yellow;
+	
+
+	}
+
+</style>
+
+</body>
+</html>
